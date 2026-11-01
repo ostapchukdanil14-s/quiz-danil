@@ -1,0 +1,155 @@
+body {
+    background: url("https://st2.depositphotos.com/1278966/5506/i/450/depositphotos_55062177-stock-photo-blue-handmade-numbers-math-background.jpg");
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-size: cover; 
+    background-position: center;
+}
+
+body::before, body::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(60px);
+    opacity: 0.5;
+}
+
+body::before {
+    background: #ff7675;
+    top: -50px;
+    left: -50px;
+}
+
+body::after {
+    background: #55efc4;
+    bottom: -50px;
+    right: -50px;
+}
+
+.app-container {
+    background: #2c5e43;
+    color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 380px;
+    text-align: center;
+    border: 4px solid #1e3f2d;
+    z-index: 1;
+}
+
+.screen h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    background-color: #4cd137;
+    color: white;
+    border: 2px solid #44bd32;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background-color: #44bd32;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.difficulty-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.diff-btn {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+#answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.answer-btn {
+    background-color: #e8f5e9;
+    color: #1e3f2d;
+    border: 2px solid #a5d6a7;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.answer-btn:hover {
+    background-color: #c8e6c9;
+    border-color: #4caf50;
+    color: #11261c;
+}
+
+.hide {
+    display: none;
+}
+
+.correct {
+    background-color: rgb(46, 204, 113) !important;
+    border-color: rgb(39, 174, 96) !important;
+    color: white !important;
+}
+
+.wrong {
+    background-color: rgb(231, 76, 60) !important;
+    border-color: rgb(192, 57, 43) !important;
+    color: white !important;
+}
+
+.result-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ffffff;
+}
