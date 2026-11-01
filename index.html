@@ -1,1 +1,40 @@
-
+<!DOCTYPE html>
+<html lang="uk">
+<body>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<div class="app-container">
+    <div id="start-screen" class="screen">
+        <h2>Smart Quiz</h2>
+        <button id="start-btn">Почати</button>
+    </div>
+    <div id="difficulty-screen" class="screen hide">
+        <h2>Обери складність</h2>
+        <div class="difficulty-container">
+            <button class="diff-btn" data-difficulty="easy">Легка</button>
+            <button class="diff-btn" data-difficulty="medium">Середня</button>
+            <button class="diff-btn" data-difficulty="hard">Важка</button>
+        </div>
+    </div>
+    <div id="quiz-screen" class="screen hide">
+        <div class="header">
+            <span id="timer">Час: 15</span>
+            <span id="score-display">Бали: 0</span>
+        </div>
+        <h2 id="question-text">Питання</h2>
+        <div id="answers-container">
+        </div>
+    </div>
+    <div id="result-screen" class="screen hide">
+        <h2>Гру завершено!</h2>
+        <p class="result-text"></p>
+        <button id="restart-btn">Спробувати ще</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
